@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/10
  * @desc Redisson分布式锁注解解析器
  */

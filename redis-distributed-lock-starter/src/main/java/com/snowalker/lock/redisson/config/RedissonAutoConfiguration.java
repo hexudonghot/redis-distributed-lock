@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/10
  * @desc Redisson自动化配置
  */

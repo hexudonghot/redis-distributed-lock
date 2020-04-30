@@ -3,7 +3,7 @@ package com.snowalker.lock.redisson.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/10
  * @desc Redisson配置映射类
  */

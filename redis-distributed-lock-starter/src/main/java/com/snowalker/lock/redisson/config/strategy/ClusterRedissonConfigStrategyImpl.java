@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/12
  * @desc 集群方式Redisson配置
  * 地址格式：

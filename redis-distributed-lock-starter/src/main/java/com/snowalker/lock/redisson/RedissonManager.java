@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/10
  * @desc Redisson核心配置，用于提供初始化的redisson实例
  */

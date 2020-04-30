@@ -1,7 +1,7 @@
 package com.snowalker.lock.redisson.constant;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/12
  * @desc 全局常量枚举
  */

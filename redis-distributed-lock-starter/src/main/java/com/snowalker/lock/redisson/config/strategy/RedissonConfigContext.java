@@ -4,7 +4,7 @@ import com.snowalker.lock.redisson.config.RedissonProperties;
 import org.redisson.config.Config;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/12
  * @desc Redisson配置上下文，产出真正的Redisson的Config
  */

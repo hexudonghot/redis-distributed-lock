@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Import;
 import java.lang.annotation.*;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/10
  * @desc 开启Redisson注解支持
  */

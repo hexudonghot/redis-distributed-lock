@@ -3,7 +3,7 @@ package com.snowalker.lock.redisson.annotation;
 import java.lang.annotation.*;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/10
  * @desc Redisson分布式锁注解
  */

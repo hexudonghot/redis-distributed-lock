@@ -1,7 +1,7 @@
 package com.snowalker.lock.redisson.constant;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/11
  * @desc Redis连接方式
  *          包含:standalone-单节点部署方式

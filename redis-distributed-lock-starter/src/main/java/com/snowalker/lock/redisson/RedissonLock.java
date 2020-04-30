@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author snowalker
+ * @author    hxd
  * @date 2018/7/10
  * @desc 分布式锁实现基于Redisson
  */
