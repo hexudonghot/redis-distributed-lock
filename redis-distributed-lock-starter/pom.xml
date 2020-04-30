@@ -5,7 +5,7 @@
 
 	<groupId>com.snowalker</groupId>
 	<artifactId>redis-distributed-lock-starter</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>redis-distributed-lock-starter</name>
@@ -47,15 +47,7 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectjweaver}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-logging -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -71,12 +63,7 @@
 		<dependency>
 			<groupId>org.redisson</groupId>
 			<artifactId>redisson</artifactId>
-			<version>3.5.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>${apache-common-lang3}</version>
+			<version>3.12.5</version>
 		</dependency>
 	</dependencies>
 
@@ -84,7 +71,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>3.0.1</version>
+				<version>3.2.1</version>
 				<configuration>
 					<attach>true</attach>
 				</configuration>
@@ -118,4 +105,18 @@
 			</resource>
 		</resources>
 	</build>
+
+
+	<distributionManagement>
+		<repository>
+			<id>nexus-deploy</id>
+			<name>Nexus Releases</name>
+			<url>http://nexus.pengpengla.com:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-deploy</id>
+			<name>Nexus Snapshots</name>
+			<url>http://nexus.pengpengla.com:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

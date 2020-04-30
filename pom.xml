@@ -8,8 +8,8 @@
   <artifactId>redis-distributed-lock</artifactId>
   <version>1.0.0</version>
   <modules>
-    <module>redis-distributed-lock-core</module>
-    <module>redis-distributed-lock-demo-spring</module>
+<!--    <module>redis-distributed-lock-core</module>-->
+<!--    <module>redis-distributed-lock-demo-spring</module>-->
     <module>redis-distributed-lock-starter</module>
     <module>redis-distributed-lock-starter-demo</module>
   </modules>
@@ -18,5 +18,31 @@
   <name>redis-distributed-lock</name>
 
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-deploy</id>
+            <name>Nexus Releases</name>
+            <url>http://nexus.pengpengla.com:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-deploy</id>
+            <name>Nexus Snapshots</name>
+            <url>http://nexus.pengpengla.com:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>

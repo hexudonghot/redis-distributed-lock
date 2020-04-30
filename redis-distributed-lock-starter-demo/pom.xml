@@ -25,26 +25,26 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<artifactId>rctmq-spring</artifactId>
-			<exclusions>
-				<exclusion>
-					<artifactId>guava</artifactId>
-					<groupId>com.google.guava</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>commons-lang3</artifactId>
-					<groupId>org.apache.commons</groupId>
-				</exclusion>
-			</exclusions>
-			<groupId>com.gyjx.marketing</groupId>
-			<version>0.0.1</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<artifactId>rctmq-spring</artifactId>-->
+<!--			<exclusions>-->
+<!--				<exclusion>-->
+<!--					<artifactId>guava</artifactId>-->
+<!--					<groupId>com.google.guava</groupId>-->
+<!--				</exclusion>-->
+<!--				<exclusion>-->
+<!--					<artifactId>commons-lang3</artifactId>-->
+<!--					<groupId>org.apache.commons</groupId>-->
+<!--				</exclusion>-->
+<!--			</exclusions>-->
+<!--			<groupId>com.gyjx.marketing</groupId>-->
+<!--			<version>0.0.1</version>-->
+<!--		</dependency>-->
 		<!--分布式锁redisson版本-->
 		<dependency>
 			<groupId>com.snowalker</groupId>
 			<artifactId>redis-distributed-lock-starter</artifactId>
-			<version>1.2.0</version>
+			<version>1.2.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
