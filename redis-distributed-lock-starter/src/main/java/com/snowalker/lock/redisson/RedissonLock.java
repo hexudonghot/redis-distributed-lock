@@ -49,7 +49,8 @@ public class RedissonLock {
      * @param lockName
      */
     public void release(String lockName) {
-        redissonManager.getRedisson().getLock(lockName).unlock();
+        if(redissonManager.getRedisson().getLock(lockName).isHeldByCurrentThread())
+            redissonManager.getRedisson().getLock(lockName).unlock();
     }
 
     public RedissonManager getRedissonManager() {
