@@ -26,11 +26,11 @@ public class RedissonLock {
      * 加锁操作
      * @return
      */
-    public boolean lock(String lockName, long expireSeconds) {
+    public boolean lock(Long spinTime,String lockName, long expireSeconds) {
         RLock rLock = redissonManager.getRedisson().getLock(lockName);
         boolean getLock = false;
         try {
-            getLock = rLock.tryLock(0, expireSeconds, TimeUnit.SECONDS);
+            getLock = rLock.tryLock(spinTime, expireSeconds, TimeUnit.SECONDS);
             if (getLock) {
                 LOGGER.info("获取Redisson分布式锁[成功],lockName={}", lockName);
             } else {

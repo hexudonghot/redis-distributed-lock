@@ -17,6 +17,8 @@ public @interface DistributedLock {
     String value() default "distributed-lock-redisson";
     /**锁超时时间,默认十秒*/
     int expireSeconds() default 10;
+    /**锁超时时间,默认十秒*/
+    long spinTime() default 0L;
 }
 
 

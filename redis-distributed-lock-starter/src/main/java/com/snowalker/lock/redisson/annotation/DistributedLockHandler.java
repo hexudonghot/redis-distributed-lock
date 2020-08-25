@@ -34,7 +34,8 @@ public class DistributedLockHandler {
         String lockName = distributedLock.value();
         /**获取超时时间，默认十秒*/
         int expireSeconds = distributedLock.expireSeconds();
-        if (redissonLock.lock(lockName, expireSeconds)) {
+        Long  spinTime = distributedLock.spinTime();
+        if (redissonLock.lock(spinTime,lockName, expireSeconds)) {
             try {
                 LOGGER.info("获取Redis分布式锁[成功]，加锁完成，开始执行业务逻辑...");
                 joinPoint.proceed();
